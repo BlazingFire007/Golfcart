@@ -1,3 +1,4 @@
+//version 0.1
 function f(a){
   let args = a[0].split(' ')[0].split``;
   if (args.length > 26*2) return !1;
