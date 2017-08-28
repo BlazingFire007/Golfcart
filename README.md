@@ -19,6 +19,6 @@ You can also use brackets if you want: `ab {return b-a}`
 
 Will return a function that looks like `(a,b)=>{return b-a};`
 
-Midpoint function: ``m=f`abxy [(a+x)/2,(b+y)/2]``
+Midpoint function: ``m=f`abxy [(a+x)/2,(b+y)/2]```
 
 Usage: ``m(-1,2,3,-6)//returns [1,-2]``
