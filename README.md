@@ -25,16 +25,16 @@ Examples:
 Here's an example of using Golfcart to shorten code.
 
 Normal JavaScript:
-```
+```js
 function dist(a, b, c, d) {
   return Math.sqrt(Math.pow(c - a, 2) + Math.pow(d - b, 2));
 }
 ```
 Golfed JavaScript:
-```
+```js
 (a,b,c,d)=>Math.sqrt((c-a)**2+(d-b)**2)
 ```
 Golfcart.js:
-```
+```js
 f`abcd sqrt((c-a)**2+(d-b)**2)`;
 ```
