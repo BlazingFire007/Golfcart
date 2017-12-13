@@ -2,7 +2,7 @@
 Golfcart is a JavaScript library for code golfing.
 
 
-The current version (0.2) was made public at **11 PM CT on December 13th, 2017**. 
+The current version (0.2) was made public at **11:30 PM CT on December 13th, 2017**. 
 
 This library should not be used with any challenges before then.
 
