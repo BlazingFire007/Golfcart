@@ -19,7 +19,22 @@ You can also use brackets if you want: `ab {return b-a}`
 
 Will return a function that looks like `(a,b)=>{return b-a};`
 
-Midpoint function: ``m=f`abxy [(a+x)/2,(b+y)/2]`
-``
 
-Usage: ``m(-1,2,3,-6)//returns [1,-2]``
+Examples:
+------
+Here's an example of using Golfcart to shorten code.
+
+Normal JavaScript:
+```
+function dist(a, b, c, d) {
+  return Math.sqrt(Math.pow(c - a, 2) + Math.pow(d - b, 2));
+}
+```
+Golfed JavaScript:
+```
+(a,b,c,d)=>Math.sqrt((c-a)**2+(d-b)**2)
+```
+Golfcart.js:
+```
+f`abcd sqrt((c-a)**2+(d-b)**2)`;
+```
