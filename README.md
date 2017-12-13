@@ -36,5 +36,5 @@ Golfed JavaScript:
 ```
 Golfcart.js:
 ```js
-f`abcd sqrt((c-a)**2+(d-b)**2)`;
+f`abcd sqrt((c-a)**2+(d-b)**2)`
 ```
