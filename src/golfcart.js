@@ -1,4 +1,4 @@
-//version 0.1
+//version 0.2
 function f(a){
   let args = a[0].split(' ')[0].split``;
   if (args.length > 26*2) return !1;
@@ -9,6 +9,25 @@ function f(a){
   str="("+str.join(",")+")=>"+a[0].split(' ').slice(1).join(' ')+";";
   return eval(str);
 }
+
+function sym(c) {
+	return c.toUpperCase() === c.toLowerCase();
+}
+
+function up(c) {
+	return c.toUpperCase() === c;
+}
+
+function od(n) {
+	return n % 2 !== 0;
+}
+
+var a = [], n = 0, o = {}, b = false, s = "";
+
+if (window) {
+	Object.getOwnPropertyNames(Math).forEach(e => window[e] = Math[e]);
+}
+
 String.prot = String.prototype;
 const Str = String;
 String.prot.log = function(){return console.log(this.valueOf());};
@@ -137,6 +156,61 @@ Function.dN = Function.displayName||null;
 Function.prot.a =Function.prot.apply;
 Function.prot.b = Function.prot.bind;
 Function.prot.c = Function.prot.call;
+Function.prot.tS = Function.prot.toString;
 Function.prot.iG = Function.prot.isGenerator||function(){};
 Function.prot.toS = Function.prot.toSource||function(){};
 
+const D = Date;
+Date.prot = Date.prototype;
+const nD = () => new Date(...arguments);
+Date.n = Date.now;
+Date.p = Date.parse;
+Date.U = Date.UTC;
+Date.prot.gD = Date.prot.getDate;
+Date.prot.gd = Date.prot.getDay;
+Date.prot.gFY = Date.prot.getFullYear;
+Date.prot.gH = Date,prot.getHours;
+Date.prot.gMS = Date.prot.getMilliseconds;
+Date.prot.gM = Date.prot.getMinutes;
+Date.prot.gm = Date.prot.getMonth;
+Date.prot.gS = Date.prot.getSeconds;
+Date.prot.gT = Date.prot.getTime;
+Date.prot.gTO = Date.prot.getTimezoneOffset;
+Date.prot.gUD = Date.prot.getUTCDate;
+Date.prot.gUd = Date.prot.getUTCDay;
+Date.prot.gUFY = Date.prot.getUTCFullYear;
+Date.prot.gUh = Date.prot.getUTCHours;
+Date.prot.gUMS = Date.prot.getUTCMilliseconds;
+Date.prot.gUM = Date.prot.getUTCMinutes;
+Date.prot.gUm = Date.prot.getUTCMonths;
+Date.prot.gUS = Date.prot.getUTCSeconds;
+Date.prot.gY = Date.prot.getYear||function(){};
+Date.prot.sD = Date.prot.setDate;
+Date.prot.sFY = Date.prot.setFullYear;
+Date.prot.sH = Date.prot.getHours;
+Date.prot.sMS = Date.prot.setMilliseconds;
+Date.prot.sM = Date.prot.setMinutes;
+Date.prot.sm = Date.prot.setMonth;
+Date.prot.sS = Date.prot.setSeconds;
+Date.prot.sT = Date.prot.setTime;
+Date.prot.sUD = Date.prot.setUTCDate;
+Date.prot.sUFY = Date.prot.setUTCFullYear;
+Date.prot.sUH = Date.prot.setUTCHours;
+Date.prot.sUMS = Date.prot.setUTCMilliseconds;
+Date.prot.sUM = Date.prot.setUTCMinutes;
+Date.prot.sUm = Date.prot.setUTCMonth;
+Date.prot.sUS = Date.prot.setUTCSeconds;
+Date.prot.sY = Date.prot.setYear||function(){};
+Date.prot.tDS = Date.prot.toDateString;
+Date.prot.tIS = Date.prot.toISOString;
+Date.prot.tJ = Date.prot.toJSON;
+Date.prot.tGS = Date.prot.toGMTString;
+Date.prot.tLDS = Date.prot.toLocaleDataString;
+Date.prot.tLF = Date.prot.toLocaleFormat||function(){};
+Date.prot.tLS = Date.prot.toLocaleString;
+Date.prot.tLTS = Date.prot.toLocaleTimeString;
+Date.prot.ts = Date.prot.toSource||function(){};
+Date.prot.tS = Date.prot.toString;
+Date.prot.tTS = Date.prot.toTimeString;
+Date.prot.tUS = Date.prot.toUTCString;
+Date.prot.vO = Date.prot.valueOf;
